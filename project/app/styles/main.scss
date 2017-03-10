@@ -6,7 +6,7 @@ $icon-font-path: '../fonts/';
 
 
 html{color:#000;background:#ecf0f1;height:100%;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
-*{box-sizing:border-box;}
+*{box-sizing:border-box; }
 body{min-height: 100%}
 
 body {
@@ -15,6 +15,7 @@ body {
   background-image: url(../images/indexbgend.jpg);
   background-repeat:no-repeat;
   font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
 }
 
 a,ul,li{
@@ -38,6 +39,16 @@ a:hover{
   width:1200px;
   height: 3000px;
 }
+
+.wrapper-region{
+    width: 100%;
+    height: 555px;
+    background:linear-gradient(#282828, #303030);;
+    position: absolute;
+    top: 2680px;
+    left: 0;
+}
+
 
 
 
@@ -244,8 +255,7 @@ a:hover{
 
 #hotspot{
   margin: 30px 0 60px 0;
-  padding-left: 0;
-  padding-right:0;
+  @include padding-fix;
   h1{
     font-size: 30px;
     text-align: center;
@@ -254,22 +264,10 @@ a:hover{
   .hotspot-nav{
     display: flex;
     .nav-line{
-      flex:1;
-      position: relative;
-      border-bottom: 1px solid rgba(0,0,0,0.3);
-      top: -15px;
+      @include nav-line;
     }
     .nav-title{
-      margin: 10px 20px 5px 20px;
-      font-size: 18px;
-      span{
-        padding-right: 15px;
-        padding-left: 15px;
-        border-right: 1px solid rgba(0,0,0,0.3);
-        &:last-child{
-          border-right: none;
-        }
-      }
+      @include nav-title;
     }
   }
   .hotspot-video{
@@ -389,16 +387,130 @@ a:hover{
 }
 
 
-
-
-
 #shop{
-  background: #bbb
+  position: relative;
+  margin: 30px 0 60px 0;
+  background: #fff;
+  @include padding-fix;
+  h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    }
+  .shop-nav{
+    display: flex;
+    margin-bottom: 20px;
+    .nav-line{
+      @include nav-line
+    }
+    .nav-title{
+      @include nav-title;
+    }
+  }
+  .shop-recommand{
+    height: 700px;
+    .rec-carousel{
+      height: 500px;
+      .mallrecs{
+        dl{
+          width: 1230px;
+          position: absolute;
+        }
+        dl dd{
+          height: 236px;
+          float: left;
+          display: block;
+          margin: 0 10px 20px;
+        }
+      }
+      .next i,.prev i{
+        width: 38px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        right:0;
+        margin: 0px -20px 0px -20px;
+        background: url(../images/newspic.png)  no-repeat;
+        background-position:  0 0;
+      }
+      .prev i{
+        left: -11px;
+      }
+      .next i{
+        background-position: 0 -80px;
+      }
+    }
+    .rec-viewmore{
+      @include clearfix;
+      ul li{
+        margin: 10px;
+        width: 285px;
+        min-height: 140px;
+        float: left;
+        background: url(../images/mall-viewmore.jpg);
+        .icon{
+          width: 155px;
+          height: 140px;
+          display: inline-block;
+        }
+        h3{
+          width: 130px;
+          float: left;
+          line-height: 30px;
+          padding-top: 30px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        a{
+          float: left;
+          padding: 2px 4px 2px 0;
+          color: gray;
+        }
+        
+      }
+    }
+  }
+  .shop-forward{
+    margin: 0 auto;
+    @include clearfix;
+    @include radius-btn($br:30px,$width:120px,$tp:8px,$bm:8px);
+    &:hover{@include radius-btn-hover;}
+  }
 }
-#time{
-  background: #ddd
+
+
+#mtime{
+  @include padding-fix;
+  margin-bottom: 1150px;
+  h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .mtime-nav{
+    display: flex;
+    margin-bottom: 20px;
+    .nav-line{
+      @include nav-line
+    }
+    .nav-title{
+      @include nav-title;
+    }
+  }
+
 }
+
+
+
+
 #footer{
   background: #eee
 }
 
+
+
+#brand-ad{
+  min-height: 90px;
+  background: url(../images/brand.jpg) no-repeat;
+  margin: 30px 0;
+}

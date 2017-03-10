@@ -23,3 +23,37 @@
 }
 
 
+@mixin nav-line{
+    flex:1;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    top: -15px;
+}
+
+@mixin nav-title{
+    margin: 10px 20px 5px 20px;
+    font-size: 18px;
+    span{
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    &:last-child{
+        border-right: none;
+    }
+    }
+}
+
+@mixin padding-fix{
+    padding-left: 0;
+    padding-right:0;
+}
+
+@mixin clearfix{
+    &:after{
+        content: '';
+        height: 0;
+        visibility: hidden;
+        display: block ;
+        clear: both;
+    }
+}
