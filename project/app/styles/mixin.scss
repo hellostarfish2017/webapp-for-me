@@ -1,0 +1,25 @@
+@mixin nav-font-type {
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+@mixin radius-btn($color:black,$br:50%,$fc:#ccc,$width:55px,$tp:3px,$bm:3px){
+    color: $color;
+    padding-top: $tp;
+    padding-bottom: $bm;
+    text-align: center;
+    width: $width;
+    border:1px solid $color;
+    border-radius:$br;
+}
+
+@mixin radius-btn-hover($bc:#58a,$fc:white){
+    background: $bc;
+    color: $fc;
+    border:1px solid $bc;
+    cursor:pointer;
+    a{color: $fc;}
+}
+
+

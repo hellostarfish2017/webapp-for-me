@@ -26,43 +26,286 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">project</h3>
-      </div>
+    <div class="potbpx"></div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+<div class="web-wrapper container-fluid">
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
+  <div class="row">
+      <!--header部分-->
+      <div class="row">
+        <div id="header" class="col-lg-12">
+          <div class="header-menu">
+            <div class="row">
+              <div class="header-nav col-lg-5">
+                  <span>
+                  <a href="#">首页</a>
+                  </span>
+                  <span class="dropdown">
+                    <a href="#" data-toggle="dropdown">购票</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">金刚狼</a></li>
+                      <li><a href="#">生化危机</a></li>
+                      <li><a href="#">神奇博士</a></li>
+                      <li><a href="#">死侍2</a></li>
+                      <li><a href="#">金刚：骷髅岛</a></li>
+                    </ul>
+                  </span>
+                  <span class="dropdown">
+                    <a href="#" data-toggle=dropdown>正版商城</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">周边</a></li>
+                      <li><a href="#">书籍</a></li>
+                      <li><a href="#">蓝光DVD</a></li>
+                    </ul>
+                  </span>
+                  <span>
+                    <a href="#">直播</a>
+                  </span>
+                  <span class="dropdown">
+                    <a href="#" data-toggle=dropdown>发现</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">电影明星</a></li>
+                      <li><a href="#">奥斯卡</a></li>
+                      <li><a href="#">最新资讯</a></li>
+                    </ul>
+                  </span>
+                  <span>
+                    <a href="#">社区</a>
+                  </span>
+              </div>
+              <div class="header-logo col-lg-2">
+              </div>
+              <div class="header-right col-lg-4">
+                <span class="qr-code"><a href=""><span class="glyphicon glyphicon-phone "></span>App下载</a><span class="glyphicon glyphicon-menu-down"></span></span>
+                <span class="login"><a href="">登录</a></span>
+                <span class="reg"><a href="">注册</a></span>
+              </div>
+              <div class="header-cart col-lg-1">
+                <div class="cart"></div>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="header-search col-lg-12">
+                <form action="" class="fm-search">
+                  <div class="search-wrapper">
+                    <div class="dropdown searchselect">
+                        <a href="#" data-toggle="dropdown">全部</a>
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                        <span class="search-splice">|</span>
+                        <ul class="dropdown-menu">
+                          <li><a href="">全部</a></li>
+                          <li><a href="">电影</a></li>
+                          <li><a href="">影院</a></li>
+                          <li><a href="">明星</a></li>
+                          <li><a href="">商城</a></li>
+                          <li><a href="">新闻</a></li>
+                        </ul>
+                    </div>
+                    <div class="searchbox">
+                      <input type="text" placeholder="300勇士" class="searchbox-text">
+                    </div>
+                    <div class="searchbtn">
+                      <span class="glyphicon glyphicon-search submitbtn"></span>
+                    </div>
+                  </div>             
+                </form>
+              </div>
+            </div>
+            <div class="row">
+                <div class="header-carousel col-lg-12">
+                  <ul id="arrows">
+                    <li><a class="prev" href="#">&laquo;</a></li>
+                    <li><a class="next" href="#">&raquo;</a></li>
+                  </ul>
+                  <ul id="carousel">
+                    <li data-id="1" class="active">
+                      <img src="images/carousel1.jpg" alt="carousel1">
+                    </li>
+                    <li data-id="2">
+                      <img src="images/carousel3.jpg" class="live-telecast" alt="carousel3">
+                      <img src="images/carousel2.jpg" alt="carousel2">
+                    </li>
+                  </ul>
+                  <ul id="pagination">
+                    <li class="pag_active"><a data-id="1" href="#"></a></li>
+                    <li><a data-id="2" href="#"></a></li>
+                    <span class="clear"></span>
+                  </ul>
+                </div>
+            </div>
         </div>
       </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+      <!--header部分end-->
+      
+      <!--今日热点部分-->
+      <div class="row">
+        <div id="hotspot" class="col-lg-12">
+          <h1>今日热点</h1>
+          <div class="row">
+            <div class="hotspot-nav col-lg-12">
+              <div class="nav-line"></div>
+              <div class="nav-title">
+                <span>时光对话</span>
+                <span>产业聚焦</span>
+                <span>电视情报</span>
+                <span>全球拾趣</span>
+              </div>
+              <div class="nav-line"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="hotspot-video col-lg-9">
+              <div class="row">
+                <div class="video-components col-lg-4">
+                  <div class="video-pic">
+                      <img  src="images/video1.jpg" alt="video">
+                  </div>
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                  <span>幕后制作特辑曝光 导演全方位解读大片养成记</span>
+                </div>
+                <div class="video-components col-lg-4">
+                  <div class="video-pic">
+                      <img  src="images/video2.jpg" alt="video">
+                  </div>
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                  <span>幕后制作特辑曝光 导演全方位解读大片养成记</span>
+                </div>
+                <div class="video-components col-lg-4">
+                  <div class="video-pic">
+                      <img  src="images/video3.jpg" alt="video">
+                  </div>
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                  <span>幕后制作特辑曝光 导演全方位解读大片养成记</span>
+                </div>
+                <div class="video-components col-lg-4">
+                  <div class="video-pic">
+                      <img  src="images/video4.jpg" alt="video">
+                  </div>
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                  <span>幕后制作特辑曝光 导演全方位解读大片养成记</span>
+                </div>
+                <div class="video-components col-lg-4">
+                  <div class="video-pic">
+                      <img  src="images/video5.jpg" alt="video">
+                  </div>
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                  <span>幕后制作特辑曝光 导演全方位解读大片养成记</span>
+                </div>
+                <div class="video-components col-lg-4">
+                  <div class="video-pic">
+                      <img  src="images/video.jpg" alt="video">
+                  </div>
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                  <span>幕后制作特辑曝光 导演全方位解读大片养成记</span>
+                </div>
+              </div>
+            </div>
+            <div class="hotspot-live col-lg-3">
+                <div class="brand">
+                  <img class="video-pic" src="images/live.jpg" alt="video">
+                  <div class="control-pic"></div>
+                  <h2>抖森3月16日来华宣传《金刚骷髅岛》</h2>
+                </div>
+                <div class="brand-more">
+                  <h2>更多直播</h2>
+                  <dl class="hotlivelist">
+                    <dd>
+                      <i class="icon"></i>
+                      <div class="hotlivebox">
+                          <a href="#" class="box-title" title="《乐高蝙蝠侠大电影》首映直播">《乐高蝙蝠侠大电影》首映直播</a>
+                          <a href="#" class="box-btn">回放</a>
+                          <span>2017年03月04日</span>
+                      </div>
+                    </dd>
+                    <dd>
+                      <i class="icon"></i>
+                      <div class="hotlivebox">
+                          <a href="#" class="box-title" title="《乐高蝙蝠侠大电影》首映直播">《乐高蝙蝠侠大电影》首映直播</a>
+                          <a href="#" class="box-btn">回放</a>
+                          <span>2017年03月04日</span>
+                      </div>
+                    </dd>
+                    <dd>
+                      <i class="icon"></i>
+                      <div class="hotlivebox">
+                          <a href="#" class="box-title" title="《乐高蝙蝠侠大电影》首映直播">《乐高蝙蝠侠大电影》首映直播</a>
+                          <a href="#" class="box-btn">回放</a>
+                          <span>2017年03月04日</span>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+            </div>
+          </div>
+          <div class="hotspot-forward">
+            <a href="#">查看更多</a>
+          </div>
+        </div>
       </div>
-    </div>
+      <!--今日热点部分end-->
+
+
+
+
+<div class="row">
+  <div id="shop" class="col-lg-12">
+    正版商城
+  </div>
+</div>
+
+<div class="row">
+  <div id="time" class="col-lg-12">
+    时光精选
+  </div>
+</div>
+
+<div class="row">
+  <div id="footer" class="col-lg-12">
+    网站注脚
+  </div>
+</div>
+
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
